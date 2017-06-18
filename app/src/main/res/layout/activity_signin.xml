@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:src="@drawable/ic_android_black_24dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp" />
+
+
+    <TextView
+        android:textAllCaps="true"
+        android:id="@+id/title"
+        android:layout_width="200sp"
+        android:layout_height="60sp"
+        android:text="First App"
+        android:textColor="#1c6aa2"
+        android:textSize="40sp"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_user"
+        android:text="USERNAME"
+        android:textColor="#000"
+        android:layout_below="@+id/title"/>
+
+    <EditText
+        android:id="@+id/user"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_user"  />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_password"
+        android:text="PASSWORD"
+        android:textColor="#000"
+        android:layout_below="@+id/user"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_password"
+        android:inputType="textWebPassword"/>
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textAllCaps="true"
+        android:layout_below="@+id/password"
+        android:background="#1c6aa2"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sign up"
+        android:textAllCaps="true"
+        android:layout_below="@+id/password"
+        android:layout_toRightOf="@+id/signin"
+        android:background="#22c164"
+        android:layout_margin="10dp"/>
+
+
+</RelativeLayout>
+
